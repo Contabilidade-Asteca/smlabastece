@@ -4,10 +4,11 @@ Este projeto é uma aplicação web construída com React e Vite para controlar 
 
 ## Funcionalidades
 
-* Cadastro de **veículos** com nome e placa.
-* Cadastro de **motoristas** com nome e número de CNH.
-* Registro de **abastecimentos**, selecionando veículo, motorista, data, quantidade de litros e valor pago.
-* **Dashboard** com indicadores (total de veículos, motoristas, abastecimentos e valor gasto) e gráfico de consumo por veículo.
+* Cadastro e **edição de veículos** com nome e placa.
+* Cadastro e **edição de motoristas** com nome e número de CNH.
+* Registro, edição e exclusão de **abastecimentos**, selecionando veículo, motorista, data, quantidade de litros e valor pago.
+* Persistência dos dados em **localStorage**, garantindo que veículos, motoristas e abastecimentos permaneçam salvos mesmo após recarregar a página.
+* **Dashboard** com indicadores (total de veículos, motoristas, abastecimentos, gasto total, litros totais e custo médio por litro), gráfico de consumo por veículo, resumo por motorista e exportação de abastecimentos em CSV.
 * Listagem dos **últimos abastecimentos** com detalhes de data, veículo, motorista, litros e custo.
 * Cálculo automático do **último abastecimento**, **média de litros** e **gasto total** para cada veículo e motorista.
 
@@ -70,7 +71,7 @@ Após iniciar a aplicação:
 2.  Use o menu de navegação para ir até **Veículos** ou **Motoristas** e cadastre novos registros.
 3.  Na página de **Abastecimentos**, registre novos abastecimentos selecionando o veículo e o motorista correspondentes.
 
-> **Nota:** Os dados cadastrados são mantidos apenas em memória (mock). Para persistência real, integre com uma API ou banco de dados.
+> **Nota:** Os dados cadastrados são persistidos no `localStorage` do navegador. Para uso corporativo, recomenda-se integrar com uma API e banco de dados dedicados.
 
 ## Estrutura de Pastas
 
