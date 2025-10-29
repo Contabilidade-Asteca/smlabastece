@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Custom global styles can be placed here.  We leave this file minimal
+ * because Tailwind provides most of the styling primitives used by the
+ * application.  Additional CSS modules can be created alongside
+ * components for more specific styling.
+ */
